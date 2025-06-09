@@ -1,0 +1,135 @@
+/* src/components/Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #111827;
+  color: #ffffff;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 600px;
+  background-color: #1f2937;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 2px solid #3b82f6;
+  margin-bottom: 2rem;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.search-bar button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.quick-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.all-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.category-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.toggle-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #059669;
+}
+
+.footer-text {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 4rem;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.8rem;
+  }
+
+  .search-bar {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .search-bar input {
+    font-size: 1rem;
+  }
+
+  .category-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .toggle-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
