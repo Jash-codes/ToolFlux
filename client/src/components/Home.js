@@ -5,6 +5,7 @@ import './Home.css';
 import { FaSearch } from 'react-icons/fa';
 
 const Home = () => {
+  
   const quickCategories = ['AI Detection', 'Chat', 'Content Making', 'Image Editing', 'Text to Video'];
 
   const allCategories = [
