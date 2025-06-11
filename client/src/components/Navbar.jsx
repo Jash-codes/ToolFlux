@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 const categories = [
@@ -16,10 +16,21 @@ const categories = [
 const Navbar = () => {
   const [showCategories, setShowCategories] = useState(false);
   const dropdownRef = useRef(null);
+  const navigate = useNavigate();
 
   const toggleCategories = () => {
     setShowCategories(!showCategories);
   };
+
+  const handleCategoryClick = (cat) => {
+  setShowCategories(false);
+  if (cat === 'AI Detection') {
+    navigate('/ai-detection');
+  } else if (cat === 'Chat') {
+    navigate('/chat');
+  }
+};
+
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -45,7 +56,13 @@ const Navbar = () => {
           {showCategories && (
             <div className="dropdown-content">
               {categories.map((cat, index) => (
-                <div key={index} className="dropdown-item">{cat}</div>
+                <div
+                  key={index}
+                  className="dropdown-item"
+                  onClick={() => handleCategoryClick(cat)}
+                >
+                  {cat}
+                </div>
               ))}
             </div>
           )}

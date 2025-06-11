@@ -58,30 +58,30 @@
 
 .dropdown-item:hover {
   background-color: #3e3e5e;
+
 }
 
-@media screen and (max-width: 768px) {
+
+Responsive */
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .navbar-right {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 100%;
-    margin-top: 0.5rem;
-  }
-
-  .navbar-right a,
-  .dropdown-btn {
-    margin: 0.5rem 0;
+    padding-top: 10px;
+    gap: 10px;
   }
 
   .dropdown-content {
-    right: auto;
-    left: 0;
+    position: static;
+    width: 100%;
+  }
+
+  .dropdown-item {
     width: 100%;
   }
 }
