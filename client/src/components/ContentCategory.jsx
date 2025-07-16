@@ -1,7 +1,7 @@
 // src/components/ContentCategory.jsx
 
 import React from 'react';
-import './AiDetection.css'; // Using same CSS for consistency
+import './ContentCategory.css'; // Using same CSS for consistency
 import { useNavigate } from 'react-router-dom';
 
 const contentTools = [
@@ -25,9 +25,9 @@ const ContentCategory = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="ai-detection-container">
+    <div className="content-making-container">
       <button className="back-button" onClick={() => navigate("/")}>← Back to Home</button>
-      <h1 className="ai-detection-title">Content Making Tools</h1>
+      <h1 className="Content-making-title">Content Making Tools</h1>
       <div className="tools-grid">
         {contentTools.map((tool, index) => (
           <a
