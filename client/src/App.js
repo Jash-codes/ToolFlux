@@ -5,6 +5,7 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import AiDetection from './components/AiDetection';
 import ChatCategory from './components/ChatCategory'; 
+import ContentCategory from './components/ContentCategory';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/ai-detection" element={<AiDetection />} />
         <Route path="/chat" element={<ChatCategory />} /> {/* ✅ Corrected path */}
+        <Route path="/content-making" element={<ContentCategory />} />
       </Routes>
     </Router>
   );

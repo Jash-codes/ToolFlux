@@ -29,6 +29,7 @@ const Navbar = () => {
   } else if (cat === 'Chat') {
     navigate('/chat');
   }
+   else if (cat === 'Content Making') navigate('/content-making');
 };
 
 
